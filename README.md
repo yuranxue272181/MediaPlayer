@@ -19,6 +19,7 @@ Currently Implemented Features
 7. Display Average FrameRate
 
 Configuration files that have been tried
+-
 1. OpenGL (Image Rendering)<br>
 -cmaker(succeed, a little bit hard)<br>
 -qmaker(succeed, very easy, no need to download additional files)
