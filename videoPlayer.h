@@ -12,7 +12,7 @@ class VideoPlayer : public QOpenGLWidget, protected QOpenGLFunctions
 
 public:
     explicit VideoPlayer(QWidget *parent = nullptr);
-    void setVideoFrame(const QImage &frame); // 设置当前视频帧
+    void setVideoFrame(const QImage &frame);
 
 protected:
     void initializeGL() override;
@@ -20,8 +20,8 @@ protected:
     void resizeGL(int w, int h) override;
 
 private:
-    QImage m_currentFrame; // 当前视频帧
-    QTimer m_timer;        // 定时器用于控制帧率
+    QImage m_currentFrame;
+    QTimer m_timer;
 };
 
 #endif // VIDEOPLAYER_H

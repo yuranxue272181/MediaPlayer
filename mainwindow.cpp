@@ -102,7 +102,7 @@ void MainWindow::openFile() {
 
         //average frame rate
         decoder = new videoDecoder(this);
-        decoder->testFromPath(fileName);
+        decoder->averageFrameRate(fileName);
 
     }
 }

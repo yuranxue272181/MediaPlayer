@@ -13,7 +13,7 @@ class videoDecoder {
 public:
     videoDecoder(MainWindow *mainWindow);
     ~videoDecoder();
-    void testFromPath(const QString &filePath);
+    void averageFrameRate(const QString &filePath);
 
 private:
     QString filePath;
