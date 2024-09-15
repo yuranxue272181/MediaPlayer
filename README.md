@@ -5,8 +5,8 @@ Basic Development Information
 1. Language: C++
 2. Application：QT creator. 
 3. Version: Qt 6.7.2 (MSVC 2019, x86_64). Built on Aug 6 2024 00:17:40. (not the LST one)
-4. The build tools of QT
--cmaker (hard to cconfigure)
+4. The build tools of QT<br>
+-cmaker (hard to cconfigure)<br>
 -qmaker (easier to configure)
 
 Currently Implemented Features
@@ -19,9 +19,9 @@ Currently Implemented Features
 7. Display Average FrameRate
 
 Configuration files that have been tried
-1. OpenGL (Image Rendering)
--cmaker(succeed, a little bit hard)
+1. OpenGL (Image Rendering)<br>
+-cmaker(succeed, a little bit hard)<br>
 -qmaker(succeed, very easy, no need to download additional files)
-2. FFmpeg (Image Decoding)
--cmaker(failed)
+2. FFmpeg (Image Decoding)<br>
+-cmaker(failed)<br>
 -qmaker(succeed, need to download ffmpeg-full-shared-version)
