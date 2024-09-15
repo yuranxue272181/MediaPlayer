@@ -1,0 +1,9 @@
+<RCC>
+<qresource prefix="/new/prefix1">
+    <file>image.png</file>
+    <file>loud.png</file>
+    <file>on.png</file>
+    <file>quiet.png</file>
+    <file>stop.png</file>
+</qresource>
+</RCC>

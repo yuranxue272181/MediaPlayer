@@ -1,0 +1,4 @@
+#ifndef VEDIODECODER_H
+#define VEDIODECODER_H
+
+#endif // VEDIODECODER_H
