@@ -25,3 +25,5 @@ Configuration files that have been tried
 2. FFmpeg (Image Decoding)<br>
 -cmaker(failed)<br>
 -qmaker(succeed, need to download ffmpeg-full-shared-version)
+
+*Theoretically, FFmpeg and OpenGL can achieve video at 1,000 fps and 100,000 pixels. QT's built-in components cannot do this.
