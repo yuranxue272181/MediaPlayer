@@ -4,17 +4,19 @@ extern "C" {
 #include <libavutil/avutil.h>
 }
 
-class dmpegtestr {
+class dmpegtestr
+{
 public:
-    dmpegtestr(const std::string &filePath) : filePath(filePath) {
+    dmpegtestr(const std::string &filePath)
+        : filePath(filePath)
+    {
         avformat_network_init();
     }
 
-    ~dmpegtestr() {
-        avformat_network_deinit();
-    }
+    ~dmpegtestr() { avformat_network_deinit(); }
 
-    void test() {
+    void test()
+    {
         AVFormatContext *formatContext = nullptr;
 
         // 打开视频文件
@@ -43,7 +45,8 @@ private:
 };
 
 // 示例用法
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     if (argc != 2) {
         std::cerr << "Usage: " << argv[0] << " <video_file>" << std::endl;
         return 1;

@@ -1,18 +1,17 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
 #include <QGraphicsView>
+#include <QLabel>
+#include <QMainWindow>
 #include <QMediaPlayer>
-#include <QVideoWidget>
 #include <QPushButton>
 #include <QSlider>
-#include <QMainWindow>
 #include <QVideoWidget>
-#include <QLabel>
 
 #include "fps.h"
 
+#include "usbthread.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -45,6 +44,8 @@ private slots:
     void hideComponents();
     void showComponents();
 
+    // void handleImageData(unsigned char *data, int size);
+    // void handleError(const QString &error);
 
 private:
     Ui::MainWindow *ui;
@@ -66,5 +67,6 @@ private:
     //average fps
     videoDecoder *decoder;
 
+    // QThread *usbThread;
 };
 #endif // MAINWINDOW_H

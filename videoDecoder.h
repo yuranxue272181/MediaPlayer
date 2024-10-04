@@ -9,7 +9,8 @@ extern "C" {
 
 class MainWindow;
 
-class videoDecoder {
+class videoDecoder
+{
 public:
     videoDecoder(MainWindow *mainWindow);
     ~videoDecoder();

@@ -1,8 +1,5 @@
 #include "videoPlayer.h"
 
-
-
-
 //This part used to test the feasibility of OpenGL, not used in the mediaplayer
 VideoPlayer::VideoPlayer(QWidget *parent)
     : QOpenGLWidget(parent)
@@ -14,7 +11,6 @@ VideoPlayer::VideoPlayer(QWidget *parent)
 void VideoPlayer::initializeGL()
 {
     initializeOpenGLFunctions();
-
 }
 
 void VideoPlayer::paintGL()
@@ -22,7 +18,7 @@ void VideoPlayer::paintGL()
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     if (!m_currentFrame.isNull()) {
-       // Converts a QImage to an OpenGL texture and draws it.
+        // Converts a QImage to an OpenGL texture and draws it.
     }
 }
 

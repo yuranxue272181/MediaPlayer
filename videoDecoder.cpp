@@ -1,20 +1,21 @@
 #include "videoDecoder.h"
-#include "mainwindow.h"
 #include <QDebug>
-
-
+#include "mainwindow.h"
 
 //This part used to test FFmpeg feasibility by displaying the average framerate.
-videoDecoder::videoDecoder(MainWindow *mainWindow):m_mainWindow(mainWindow) {
+videoDecoder::videoDecoder(MainWindow *mainWindow)
+    : m_mainWindow(mainWindow)
+{
     avformat_network_init();
 }
 
-videoDecoder::~videoDecoder() {
+videoDecoder::~videoDecoder()
+{
     avformat_network_deinit();
 }
 
-
-void videoDecoder::averageFrameRate(const QString &filePath) {
+void videoDecoder::averageFrameRate(const QString &filePath)
+{
     AVFormatContext *formatContext = nullptr;
 
     // QString -> std::string

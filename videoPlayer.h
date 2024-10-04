@@ -1,9 +1,9 @@
 #ifndef VIDEOPLAYER_H
 #define VIDEOPLAYER_H
 
-#include <QOpenGLWidget>
-#include <QOpenGLFunctions>
 #include <QImage>
+#include <QOpenGLFunctions>
+#include <QOpenGLWidget>
 #include <QTimer>
 
 class VideoPlayer : public QOpenGLWidget, protected QOpenGLFunctions
